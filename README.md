@@ -1,4 +1,4 @@
-# 💻 Atividade Avaliativa 1 - Programação WEB**
+# 💻 Atividade Avaliativa 1 - Programação WEB
 
 **Professor:** [ André Olímpio](https://github.com/andreolimpio)
 
@@ -46,4 +46,4 @@ src/ → Código
 
 ---
 
-> Por [Raphaela Monteiro](https://github.com/raphaelamonteiro)
+> 💜 Por [Raphaela Monteiro](https://github.com/raphaelamonteiro)
