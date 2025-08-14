@@ -1,4 +1,4 @@
-# 🧾 Atividade prática **ATVI – Sistema CLI**
+# 💻 Atividade Avaliativa 1 - Programação WEB**
 
 **Professor:** [ André Olímpio](https://github.com/andreolimpio)
 
