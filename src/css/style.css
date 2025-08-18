@@ -1,0 +1,246 @@
+/* Importando a fonte */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo geral do body */
+body {
+    font-family: "JetBrains Mono", monospace;
+    background-color: #1A1A1A;
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* Barra de navegação */
+nav {
+    padding: 20px 0;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar li:first-child {
+    margin-right: auto;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar a.raphaela {
+    color: #BD8FCC;
+    font-weight: bold;
+}
+
+.navbar a.active {
+    color: #BD8FCC;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #BD8FCC;
+    font-weight: 900;
+}
+
+/* Cabeçalho */
+header {
+    color: #BD8FCC;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 36px;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #CCCCCC;
+}
+
+/* Estilo para seções */
+section {
+    padding: 50px 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Seção Hero */
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero-img img {
+    margin-top: 10px;
+    border-radius: 50%;
+    max-width: 400px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.hero-img img:hover {
+    transform: scale(1.1);
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    color: #F2F2F2;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-text p {
+    font-size: 25px;
+    color: #CCCCCC;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-text span {
+    font-size: 25px;
+    color: #BD8FCC;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Seção Projetos */
+.projetos {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projetos-text {
+    padding-left: 35px;
+    /* exatamente igual ao alinhamento do Raphaela Monteiro */
+}
+
+.projetos-text h2 {
+    font-size: 50px;
+    text-align: left;
+    color: #F2F2F2;
+}
+
+.projetos-text p {
+    font-size: 20px;
+    text-align: left;
+    color: #9B7EBD;
+    margin: 0;
+}
+
+/* Botão personalizado */
+.botao-roxo {
+    margin-top: 10px;
+    background: #8E74AD;
+    color: #1A1A1A;
+    font-family: "JetBrains Mono", monospace;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+}
+
+.botao-roxo:hover {
+    background: #CCCCCC;
+    transform: scale(1.05);
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
+}
+
+.botao-roxo:active {
+    transform: scale(0.98);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Rodapé */
+footer {
+    color: #D3C9E9;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+hr {
+    color: #9B7EBD;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    .navbar a {
+        padding: 8px 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-img,
+    .hero-text {
+        max-width: 100%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    section h2 {
+        font-size: 26px;
+    }
+
+    .projetos-text {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .projetos-text h2,
+    .projetos-text p {
+        text-align: center;
+    }
+}
