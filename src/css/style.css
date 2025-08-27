@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* Corpo */
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #1A1A1A;
+    margin: 0;
+    padding: 0;
+}
+
+/* Reset básico */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1A1A1A;
+    padding: 20px 40px;
+}
+
+/* Nome à esquerda */
+.meu-nome {
+    color: #BD8FCC;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Itens da navbar à direita */
+.navbar-itens {
+    display: flex;
+    gap: 24px;
+}
+
+.navbar-itens a {
+    color: #6E4B8E;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.navbar-itens a:hover,
+.navbar-itens .active {
+    color: #F5B6CD;
+    font-weight: bold;
+}
+
+/* Hero section */
+.hero {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.hero-img {
+    width: 400px;
+    transition: transform 0.3s ease;
+    display: block;
+    margin: 0 auto;
+}
+
+.hero-img:hover {
+    transform: scale(1.1);
+}
+
+.hero h1 {
+    color: #F2F2F2;
+    font-size: 50px;
+}
+
+.hero-text h3 {
+    color: #CCCCCC;
+    font-size: 20px;
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+.hero-text span {
+    color: #F5B6CD;
+    font-size: 20px;
+    margin: 10px auto;
+    max-width: 900px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+/* Botões */
+.purple-button {
+    text-decoration: none;
+    color: #1A1A1A;
+    background-color: #8E74AD;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.purple-button:hover {
+    background-color: #BD8FCC;
+    transform: translateY(-2px);
+    color: #1A1A1A;
+}
+/* Container dos projetos */
+.projetos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    /* Espaço entre os cards */
+    margin-top: 20px;
+    flex-wrap: wrap;
+    /* Permite quebra de linha em telas pequenas */
+    padding: 0 20px;
+    /* Adiciona espaçamento nas laterais (esquerda e direita) */
+}
+
+/* Estilo do cartão de projeto */
+.card-projeto {
+    background-color: #4B367C;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    flex: 1;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px 0;
+    text-align: center;
+    /* Alinha o conteúdo ao centro dentro do cartão */
+}
+
+/* Imagem dentro do card */
+.card-projeto img {
+    width: 100%;
+    /* A imagem vai ocupar toda a largura do card */
+    height: auto;
+    /* Mantém a proporção da imagem */
+    border-radius: 10px;
+    margin-bottom: 10px;
+    /* Espaço entre a imagem e o título */
+}
+
+/* Estilo do título */
+.card-projeto h3 {
+    color: #D3C9E9;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0;
+    /* Remove margem extra para ficar mais perto da imagem */
+    padding: 0;
+    /* Remove o padding para garantir um melhor alinhamento */
+    text-align: left;
+    /* Alinha o título à esquerda */
+    margin-bottom: 10px;
+    /* Espaço entre o título e o parágrafo */
+}
+
+/* Estilo do texto (p) dentro do card */
+.card-projeto .container p {
+    color: #D3C9E9;
+    font-size: 16px;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: left;
+    /* Alinha o parágrafo à esquerda */
+}
+
+.buttons-projeto {
+    display: flex;
+    justify-content: left;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+/* Botões */
+.projeto-button {
+    text-decoration: none;
+    color: #4B367C;
+    background-color: #BD8FCC;
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: left;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.projeto-button:hover {
+    background-color: #8E74AD;
+    transform: translateY(-2px);
+    color: #4B367C;
+}
+
+/* Formulário de Contato */
+.form-container {
+    background-color: #2A2A2A;
+    border-radius: 20px;
+    padding: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    margin: 40px auto;
+}
+
+h2 {
+    color: #F5B6CD;
+    font-size: 30px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.contact-form .form-field {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+    color: #BD8FCC;
+    font-size: 16px;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #6E4B8E;
+    background-color: #333;
+    color: #F5F5F5;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: 'JetBrains Mono', monospace;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #F5B6CD;
+    outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888;
+}
+
+.submit-btn {
+    background-color: #F5B6CD;
+    color: #1A1A1A;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.submit-btn i {
+    font-size: 18px;
+}
+
+.submit-btn:hover {
+    background-color: #BD8FCC;
+    transform: translateY(-2px);
+}
+
+.submit-btn:active {
+    transform: translateY(2px);
+}
+
+.submit-btn:focus {
+    outline: 2px solid #F5B6CD;
+    outline-offset: 4px;
+}
+
+/* Rodapé */
+.footer {
+    background-color: #1A1A1A;
+    padding: 30px 40px;
+    margin-top: 60px;
+    border-top: 1px solid #333;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+
+.footer-nome {
+    color: #BD8FCC;
+    font-size: 14px;
+    margin: 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.footer-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links a {
+    color: #BD8FCC;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.footer-links a:hover {
+    color: #F5B6CD;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar-itens {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 36px;
+    }
+
+    .hero-img {
+        width: 300px;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .form-container {
+        width: 90%;
+        padding: 30px;
+    }
+}
