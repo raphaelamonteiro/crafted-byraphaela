@@ -311,30 +311,31 @@ ul {
     margin: 0;
     text-align: end;
 }
-
 .habilidades-container {
+    margin-top: 15px;
     display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 20px;
+        justify-content: center;
+        gap: 10px;
+        flex-wrap: wrap;
+        padding: 0 10px;
 }
+
 .habilidade {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    gap: 16px;
+    gap: 10px;
     border: 1px solid #9B7EBD;
     border-radius: 12px;
-    padding: 20px;
+    padding: 12px;
     width: 100%;
-    max-width: 320px;
+    max-width: 200px;
     color: #E0E0E0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease, background-color 0.3s ease;
     cursor: pointer;
-
 }
+
 .habilidade:hover {
     background-color: #2A1F3D;
     transform: translateY(-4px);
@@ -351,6 +352,127 @@ ul {
     font-weight: bold;
     color: #BD8FCC;
     margin-bottom: 8px;
+}
+
+.about {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #1A1A1A;
+    padding: 20px 40px;
+    gap: 40px;
+}
+
+.about-textos {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.about-textos h1 {
+    color: #F2F2F2;
+    font-size: 40px;
+    margin: 0 0 10px 0;
+}
+.about-textos h3 {
+    color: #9B7EBD;
+    font-size: 20px;
+    margin: 0 0 20px 0;
+    max-width: 70%;
+}
+
+.aboutme-img {
+    width: 450px;
+    max-width: 100%;
+    transition: transform 0.3s ease;
+    display: block;
+    margin-left: 0;
+}
+
+.about-links {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.about-links a {
+    color: #BD8FCC;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s ease;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.about-links a:hover {
+    color: #F5B6CD;
+}
+
+.experiencia {
+    margin-top: 15px;
+    padding: 20px 40px;
+}
+
+.experiencia-textos h1 {
+    color: #F2F2F2;
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.experiencia-textos h3 {
+    color: #9B7EBD;
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.experiencia-textos h4 {
+    color: #D3C9E9;
+    font-size: 16px;
+    text-align: center;
+    line-height: 1.6;
+}
+
+.experiencia-textos ul {
+    list-style-type: none;
+        text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.experiencia-textos li {
+    color: #D3C9E9;
+        text-align: center;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.experiencia-textos li strong {
+    color: #F2F2F2;
+        text-align: center;
+    /* Destaque para as tecnologias */
+}
+
+.hobbies {
+    margin-top: 15px;
+    padding: 20px 40px;
+}
+.hobbies-textos h1 {
+    color: #F2F2F2;
+    font-size: 40px;
+    text-align: start;
+    margin: 0 0 10px 0;
+}
+
+.hobbies-textos h3 {
+    color: #9B7EBD;
+    font-size: 20px;
+    margin: 0 0 20px 0;
 }
 
 /* Formulário de Contato */
