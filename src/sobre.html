@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link rel="icon" href="./img/favicon/black-cat.png" type="image/png">
@@ -13,41 +13,55 @@
 </head>
 
 <body>
+<!-- Barra de navegação -->
+<nav class="navbar">
+    <!-- Nome à esquerda -->
+    <a href="index.html" class="meu-nome">Raphaela Monteiro</a>
 
-    <!-- Barra de navegação -->
-    <nav>
-        <ul class="navbar">
-            <li><a href="index.html" class="meu-nome">Raphaela Monteiro</a></li>
-            <ul class="navbar-itens">
-                <li><a href="index.html">Início</a></li>
-                <li><a href="projetos.html">Projetos</a></li>
-                <li><a href="interesses.html">Interesses</a></li>
-                <li><a href="sobre.html">Sobre mim</a></li>
-                <li><a href="contato.html">Contato</a></li>
-            </ul>
-        </ul>
-    </nav>
+    <!-- Botão do menu hambúrguer (aparece no celular) -->
+    <div class="menu-toggle" id="menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Itens do menu -->
+    <ul class="navbar-itens" id="navbar-itens">
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projetos.html">Projetos</a></li>
+        <li><a href="interesses.html">Interesses</a></li>
+        <li><a href="sobre.html" class="active">Sobre mim</a></li>
+        <li><a href="contato.html">Contato</a></li>
+    </ul>
+</nav>
+
 
     <main>
         <div class="about">
             <div class="about-textos">
                 <h1>Quem é a Raphaela?</h1>
                 <h3>
-                    Estudante de Análise e Desenvolvimento de Sistemas, com uma grande paixão por tecnologia e inovação.
-                    <br>
-                    Também possuo formação técnica em Desenvolvimento de Sistemas pela ETEC Machado de Assis e também em
-                    Administração pela PROZ,
-                    experiências que foram fundamentais para me ajudar a escolher a área de tecnologia e a organizar meu
-                    caminho
-                    profissional desde o ensino médio.
-                    <br>
-                    Minha verdadeira paixão por Inteligência Artificial, engenharia de software e inovação me impulsiona
-                    constantemente a
-                    buscar soluções tecnológicas que sejam não apenas eficientes, mas também escaláveis.
-                    <br>
-                    Estou sempre em busca de desafios que me permitam crescer como profissional e contribuir para
-                    projetos que realmente
-                    façam a diferença no mundo tecnológico.
+                    <p>
+                        Estudante de <strong>Análise e Desenvolvimento de Sistemas</strong> com paixão por tecnologia e
+                        inovação.
+                        Minha trajetória inclui formação técnica em <strong>Desenvolvimento de Sistemas</strong> pela
+                        ETEC Machado de
+                        Assis e em <strong>Administração</strong> pela PROZ, experiências que foram fundamentais para
+                        consolidar minha escolha
+                        pela área de tecnologia e estruturar meu caminho profissional desde o ensino médio.
+                    </p>
+
+                    <p>
+                        Minha verdadeira paixão por <strong>Inteligência Artificial, Ciência de Dados e Engenharia de
+                            Software</strong>
+                        me impulsiona constantemente na busca por soluções tecnológicas que sejam não apenas eficientes,
+                        mas também escaláveis e inovadoras.
+                    </p>
+
+                    <p>
+                        Estou sempre em busca de <strong>desafios impactantes</strong> que me permitam crescer como
+                        profissional e contribuir para projetos que façam a diferença no cenário tecnológico.
+                    </p>
                 </h3>
 
                 <ul class="about-links">
@@ -65,7 +79,8 @@
             <div class="experiencia-textos">
                 <h1>Experiencia Profissional</h1>
                 <h3>Estágio em Desenvolvimento Full Stack na WCorp <br>
-                    <i class="fa-regular fa-clock"></i> (Fevereiro/2025 - Presente)</h3>
+                    <i class="fa-regular fa-clock"></i> (Fevereiro/2025 - Presente)
+                </h3>
                 <h4>Minhas principais responsabilidades incluem:</h4>
                 <ul>
                     <li><strong>Desenvolvimento de aplicações web</strong> utilizando <strong>C#</strong>,
